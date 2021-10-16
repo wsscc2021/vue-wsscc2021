@@ -1,5 +1,6 @@
 <template>
   <div id="login">
+    <h1>로그인</h1>
     <div id="user-box" class="input-box">
       <input type="text" autocomplete="off" required/>
       <span>username</span>
@@ -27,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 #login {
   position: relative;
-  width: 300px;
+  width: 400px;
   height: auto;
   margin: auto;
   margin-top: 100px;

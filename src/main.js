@@ -1,10 +1,11 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-Vue.config.productionTip = false
+const app = createApp(App).use(router)
 
-new Vue({
-  router,
-  render: h => h(App)
-}).$mount('#app')
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+app.component('Header', Header)
+app.component('Footer', Footer)
+app.mount('#app')

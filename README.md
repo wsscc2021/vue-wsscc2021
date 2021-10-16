@@ -1,4 +1,4 @@
-# vue-wsscc2021
+# vue3-wsscc2021
 
 ## Project setup
 ```
