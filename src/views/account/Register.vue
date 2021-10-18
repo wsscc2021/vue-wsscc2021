@@ -4,26 +4,26 @@
     <form action="">
       <div class="setting-box">
         <div class="input-box">
-          <input name="username" id="username" type="text" autocomplete="off" required/>
+          <input type="text" autocomplete="off" />
           <label for="username">username</label>
         </div>
         <span class="comment">* 문자, 숫자, 마침표를 사용할 수 있습니다.</span>
       </div>
       <div class="setting-box">
         <div class="input-box">
-          <input type="password" autocomplete="off" required/>
+          <input type="password" autocomplete="off" />
           <label>password</label>
         </div>
         <span class="comment">* 문자, 숫자, 기호를 조합하여 8 글자 이상을 사용하세요.</span>
         <div class="input-box">
-          <input type="password" autocomplete="off" required/>
+          <input type="password" autocomplete="off" />
           <label>password-confirm</label>
         </div>
         <span class="comment">* 비밀번호를 확인하세요.</span>
       </div>
       <div class="setting-box">
         <div class="input-box">
-          <input type="email" autocomplete="off" required/>
+          <input type="email" autocomplete="off" />
           <label>email</label>
         </div>
         <span class="comment">* 해당 이메일 주소로 인증코드를 발송합니다.</span>
@@ -125,9 +125,13 @@ export default {
       line-height: 50px;
       margin-top: 20px;
       border-radius: 3px;
-      background-color: rgba(0, 33, 69, 1);
+      background-color: var(--box-color);
       color: rgba(235, 235, 235, 1);
       text-decoration: none;
+      &:hover {
+        background-color: var(--box-hover-color);
+        text-decoration: none;
+      }
       &:link {
         color: rgba(235, 235, 235, 1);
         text-decoration: none;

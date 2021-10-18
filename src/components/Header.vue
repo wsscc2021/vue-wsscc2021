@@ -69,7 +69,7 @@ export default {
       }
       &.router-link-exact-active {
         color: rgba(0, 0, 0, 1);
-        border-bottom: 3px solid rgba(0, 33, 69, 1);
+        border-bottom: 3px solid var(--box-color);
       }
     }
   }
@@ -81,10 +81,10 @@ export default {
       height: 40px;
       border: none;
       border-radius: 5px;
-      background-color: rgba(0, 33, 69, 1);
+      background-color: var(--box-color);
       color: rgba(242, 242, 242, 1);
       &:hover {
-        background-color: rgba(0, 75, 118,  1);
+        background-color: var(--box-hover-color);
         text-decoration: none;
       }
       &:link {

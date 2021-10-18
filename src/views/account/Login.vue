@@ -88,9 +88,13 @@ export default {
       line-height: 50px;
       margin-top: 20px;
       border-radius: 3px;
-      background-color: rgba(0, 33, 69, 1);
+      background-color: var(--box-color);
       color: rgba(235, 235, 235, 1);
       text-decoration: none;
+      &:hover {
+        background-color: var(--box-hover-color);
+        text-decoration: none;
+      }
       &:link {
         color: rgba(235, 235, 235, 1);
         text-decoration: none;
